@@ -22,26 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/asus/A001D/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-
-# Official
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=RaidenIshigami
-    
-# Blur
-TARGET_USES_BLUR := true
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Extra stuff
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A001D
-PRODUCT_NAME := cherish_A001D
+PRODUCT_NAME := lineage_A001D
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_A001D
 PRODUCT_MANUFACTURER := asus
