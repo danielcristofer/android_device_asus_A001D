@@ -25,11 +25,19 @@ $(call inherit-product, device/asus/A001D/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := A001D
 PRODUCT_NAME := lineage_A001D
-PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_A001D
-PRODUCT_MANUFACTURER := asus
+PRODUCT_DEVICE := A001D
+PRODUCT_BRAND := Asus
+PRODUCT_MODEL := ZB634KL
+PRODUCT_MANUFACTURER := Asus
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+
+TARGET_VENDOR_PRODUCT_NAME := A001D
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 PRIVATE_BUILD_DESC="WW_Phone-user 8.1.0 OPM1 15.32.1902.653 release-keys" \
