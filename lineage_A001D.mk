@@ -31,7 +31,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_DEVICE := A001D
 PRODUCT_NAME := lineage_A001D
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := ASUS_A001D
+PRODUCT_MODEL := Zenfone ZB634KL Series
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
