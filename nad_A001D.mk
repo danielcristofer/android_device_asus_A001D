@@ -24,14 +24,19 @@ $(call inherit-product, device/asus/A001D/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Nusantara Project stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+TARGET_USES_BLUR := true
+USE_PIXEL_CHARGING :=true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+#USE_GAPPS := true
+#USE_MICROG := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A001D
-PRODUCT_NAME := lineage_A001D
+PRODUCT_NAME := nad_A001D
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := Zenfone ZB634KL Series
+PRODUCT_MODEL := ASUS_A001D
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
